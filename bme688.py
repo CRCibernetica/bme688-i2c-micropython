@@ -6,7 +6,6 @@
 # pylint: disable=too-many-instance-attributes
 
 """
-`adafruit_bme680`
 ================================================================================
 
 CircuitPython library for BME680 temperature, pressure and humidity sensor.
