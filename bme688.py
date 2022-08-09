@@ -1,5 +1,33 @@
-# Spaces, comments and some functions have been removed from the original file to save memory
-# Original source: https://github.com/adafruit/Adafruit_CircuitPython_BME680/blob/master/adafruit_bme680.py
+# SPDX-FileCopyrightText: 2017 ladyada for Adafruit Industries
+#
+# SPDX-License-Identifier: MIT
+
+# We have a lot of attributes for this complex sensor.
+# pylint: disable=too-many-instance-attributes
+
+"""
+`adafruit_bme680`
+================================================================================
+
+CircuitPython library for BME680 temperature, pressure and humidity sensor.
+
+
+* Author(s): Limor Fried
+
+Implementation Notes
+--------------------
+
+**Hardware:**
+
+* `Adafruit BME680 Temp, Humidity, Pressure and Gas Sensor <https://www.adafruit.com/product/3660>`_
+
+**Software and Dependencies:**
+
+* Modified to work in Micropython
+* Adafruit CircuitPython firmware for the supported boards:
+  https://github.com/adafruit/circuitpython/releases
+* Adafruit's Bus Device library: https://github.com/adafruit/Adafruit_CircuitPython_BusDevice
+"""
 import time
 import math
 from micropython import const
